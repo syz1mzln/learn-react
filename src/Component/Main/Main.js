@@ -14,6 +14,7 @@ import LoginButton from "../LoginButton/LoginButton";
 import LogoutButton from "../LogoutButton/LogoutButton";
 import Home from "../../routes/Home/Home";
 import ShowDetails from "../../routes/ShowDetail/ShowDetails";
+import type from "../../styles/type.css";
 // import Clock from "../Clock/Clock";
 // import ShoppingCart from "../ShoppingCart/ShoppingCart";
 // import ToDoList from "../Todo/ToDoList";
@@ -27,7 +28,7 @@ class Main extends Component {
   };
 
   login = () => {
-    this.setState({ username: "Captain America" });
+    this.setState({ username: "Captain America!" });
   };
 
   logout = () => {
@@ -56,7 +57,9 @@ class Main extends Component {
           </NavBar>
 
           <main>
-            Hello, {this.state.username !== null && this.state.username}
+            <h1 className="${type.display}">
+              Hello, {this.state.username !== null && this.state.username}
+            </h1>
             <br />
             <br />
             <Switch>
