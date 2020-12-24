@@ -66,10 +66,46 @@ button{
 
 main{
   color: white;
+  padding: 7rem 4rem;
+  text-align: left;
 }
 
 
 .todo-input{
   padding: 0.4rem 1.3rem;
   margin: 0.5em 0.5em;
+}
+
+/********************************
+POSTER
+********************************/
+
+.poster {
+  min-width: 200px;
+  width: 200px;
+}
+
+.poster + .poster {
+  margin-left: 0.5rem;
+}
+
+.poster__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/********************************
+POSTER LIST
+********************************/
+
+.poster-list__title {
+  text-transform: capitalize;
+}
+
+.poster-list__container {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  overflow-x: auto;
 }

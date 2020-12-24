@@ -1,12 +1,10 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-// props is just a terminology, can be change to other thing, but for same understanding with others, use props
-const NavItem = (props) => {
+export default function NavItem({ path, children }) {
   return (
-    <a className="navlink" href={props.path}>
-      {props.text}
-    </a>
+    <NavLink className="navlink" to={path}>
+      {children}
+    </NavLink>
   );
-};
-
-export default NavItem;
+}

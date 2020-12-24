@@ -1,17 +1,17 @@
 import React from "react";
 
-const LoginButton = (props) => {
+const LogoutButton = (props) => {
   return (
     <div>
       <button
         type="button"
         className="LogInBtn LogInBtn-rounded"
-        onClick={props.login}
+        onClick={props.logout}
       >
-        Sign In
+        Sign Out
       </button>
     </div>
   );
 };
 
-export default LoginButton;
+export default LogoutButton;
