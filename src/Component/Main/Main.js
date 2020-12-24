@@ -7,6 +7,7 @@ import NavItem from "../NavItem/NavItem";
 import LoginButton from "../LoginButton/LoginButton";
 import Clock from "../Clock/Clock";
 import ShoppingCart from "../ShoppingCart/ShoppingCart";
+import ToDoList from "../Todo/ToDoList";
 
 // class component aka smart component
 
@@ -33,6 +34,10 @@ class Main extends Component {
         <main>
           <Clock />
           <ShoppingCart />
+          <br />
+          <br />
+          <br />
+          <ToDoList />
         </main>
       </div>
     );

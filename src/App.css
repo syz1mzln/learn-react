@@ -67,3 +67,9 @@ button{
 main{
   color: white;
 }
+
+
+.todo-input{
+  padding: 0.4rem 1.3rem;
+  margin: 0.5em 0.5em;
+}
